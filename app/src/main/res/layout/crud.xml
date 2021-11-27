@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crud_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/crud_content"
+        android:layout_width="379dp"
+        android:layout_height="314dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="일정 내용을 자유롭게 입력해주세요"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <EditText
+        android:id="@+id/crud_place"
+        android:layout_width="379dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="일정 장소를 입력해주세요"
+        android:textColor="#ffea00"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <EditText
+        android:id="@+id/crud_title"
+        android:layout_width="379dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="일정 제목을 입력해주세요"
+        android:textColor="#ff001e"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <Button
+        android:id="@+id/crud_submit"
+        android:layout_width="379dp"
+        android:layout_height="55dp"
+        android:text="작성완료"
+        app:iconTint="#FFFFFF"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="656dp" />
+
+    <EditText
+        android:id="@+id/crud_time"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="일정 시간을 입력해주세요"
+        android:textColor="#007eff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <ImageView
+        android:id="@+id/curd_logo"
+        android:layout_width="379dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/_o_"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="23dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
