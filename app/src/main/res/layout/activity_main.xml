@@ -11,5 +11,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="27dp" />
+        tools:layout_editor_absoluteY="89dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="349dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/_x_"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/crud_view"
+        android:layout_width="349dp"
+        android:layout_height="62dp"
+        android:text="+"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="436dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

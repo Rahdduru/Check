@@ -1,12 +1,10 @@
-package com.example.sqlite_ex;
+package com.example.check;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import android.annotation.Nullalbe;
 
 import androidx.annotation.Nullable;
 
@@ -44,13 +42,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
     //DB추가
-    public boolean insertData(String date, String title, String place, String time, String content){
+    public boolean insertData(String s, String date, String title, String place){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_2, date);
         contentValues.put(COL_3, title);
         contentValues.put(COL_4, place);
+        Integer time = null;
         contentValues.put(COL_5, time);
+        String content = null;
         contentValues.put(COL_6, content);
         long result = db.insert(TABLE_NAME, null, contentValues);
         if (result == 1)
